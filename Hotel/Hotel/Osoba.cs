@@ -45,6 +45,21 @@ namespace Hotel
         {
             this.lista_zakupionych_uslug.AddRange(uslugi);
         }
+        public string Paragon()
+        {
+            string paragon = "PARAGON\n" + DateTime.Now.ToString() +"\n\n";
+
+            double cena = 0;
+            double cena_pokoj = ((double)this.liczba_dni * this.pokoj.cena_za_dobe);
+            paragon += "Pokój nr " + this.pokoj.nr_pokoju+"\nLiczba dni: "+this.liczba_dni+"\nCena za pokój: " + cena_pokoj;
+            foreach(var x in this.lista_zakupionych_uslug)
+            {
+                cena += x.cena;
+                paragon += "\n"+ x.nazwa + " " + x.cena + "zł";
+            }
+            paragon += "\n\nSuma: " + (cena + cena_pokoj)+" zł";
+            return paragon;
+        }
     }
     public class Pracownik : Osoba
     {
@@ -56,4 +71,5 @@ namespace Hotel
             this.stanowisko = st;
         }
     }
+
 }

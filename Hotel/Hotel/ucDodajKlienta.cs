@@ -31,7 +31,7 @@ namespace Hotel
                 frm1.hotel.lista_klientow.Add(k);
                 k.Rezerwuj((Pokoj)comboBox1.SelectedItem, numericUpDown1.Value);
                 k.DodajUslugi(tmp);
-
+                MessageBox.Show(k.Paragon());
             }
             catch(ExceptionEmptyBox)
             {
