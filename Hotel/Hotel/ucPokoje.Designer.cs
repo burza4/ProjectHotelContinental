@@ -37,6 +37,8 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -63,12 +65,14 @@
             // 
             // btnAktPokoje
             // 
-            this.btnAktPokoje.Location = new System.Drawing.Point(98, 286);
+            this.btnAktPokoje.BackColor = System.Drawing.Color.Gold;
+            this.btnAktPokoje.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
+            this.btnAktPokoje.Location = new System.Drawing.Point(117, 285);
             this.btnAktPokoje.Name = "btnAktPokoje";
             this.btnAktPokoje.Size = new System.Drawing.Size(159, 23);
             this.btnAktPokoje.TabIndex = 1;
             this.btnAktPokoje.Text = "Aktualizuj listę pokoi";
-            this.btnAktPokoje.UseVisualStyleBackColor = true;
+            this.btnAktPokoje.UseVisualStyleBackColor = false;
             this.btnAktPokoje.Click += new System.EventHandler(this.btnAktPokoje_Click);
             // 
             // ucPokoje

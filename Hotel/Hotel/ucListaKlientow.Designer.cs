@@ -39,6 +39,7 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Imie_Nazwisko,
             this.nr_telefonu,
@@ -80,12 +81,13 @@
             // 
             // btnAktualizuj
             // 
+            this.btnAktualizuj.BackColor = System.Drawing.Color.Gold;
             this.btnAktualizuj.Location = new System.Drawing.Point(166, 289);
             this.btnAktualizuj.Name = "btnAktualizuj";
             this.btnAktualizuj.Size = new System.Drawing.Size(175, 23);
             this.btnAktualizuj.TabIndex = 1;
             this.btnAktualizuj.Text = "Aktualizuj listę";
-            this.btnAktualizuj.UseVisualStyleBackColor = true;
+            this.btnAktualizuj.UseVisualStyleBackColor = false;
             this.btnAktualizuj.Click += new System.EventHandler(this.btnAktualizuj_Click);
             // 
             // ucListaKlientow

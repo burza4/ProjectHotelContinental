@@ -48,12 +48,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.Location = new System.Drawing.Point(32, 106);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Dodaj";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
@@ -139,6 +140,7 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
