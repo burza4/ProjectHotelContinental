@@ -102,13 +102,12 @@
 
         #endregion
 
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnAktualizuj;
         private System.Windows.Forms.ColumnHeader Imie_Nazwisko;
         private System.Windows.Forms.ColumnHeader nr_telefonu;
         private System.Windows.Forms.ColumnHeader email;
         private System.Windows.Forms.ColumnHeader nr_pokoju;
         private System.Windows.Forms.ColumnHeader czas_pobytu;
+        public System.Windows.Forms.ListView listView1;
     }
 }

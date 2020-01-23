@@ -52,7 +52,13 @@ namespace Hotel
             {
                     ucDodajPracownika1.comboBox1.Items.Add(x);
             }
-
+            foreach (var x in this.hotel.lista_klientow)
+            {
+                var row = new string[] { x.imie + " " + x.nazwisko, x.numer_telefonu, x.email, x.pokoj.nr_pokoju, x.liczba_dni.ToString() };
+                var a = new ListViewItem(row);
+                a.Tag = x;
+                ucListaKlientow1.listView1.Items.Add(a);
+            }
             foreach (var x in this.hotel.lista_pracownikow)
             {
                 var row = new string[] { x.imie + " " + x.nazwisko, x.numer_telefonu, x.email,(x.stanowisko).ToString() };
