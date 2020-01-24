@@ -13,7 +13,7 @@ namespace Hotel
     public partial class ucDodajKlienta : UserControl
     {
         public Form1 frm1 { get; set; }
-        List<Usluga> tmp = new List<Usluga>();
+        List<Usluga> tmp;
         public ucDodajKlienta()
         {
             InitializeComponent();
@@ -21,6 +21,7 @@ namespace Hotel
 
         private void button1_Click(object sender, EventArgs e)
         {
+            tmp = new List<Usluga>();
             foreach (Usluga x in checkedListBox1.CheckedItems)
                 tmp.Add(x);
             try
